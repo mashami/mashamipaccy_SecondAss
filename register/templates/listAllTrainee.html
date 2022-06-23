@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+            <h2>ALL MY TRAINEES TABLE</h2>
+      <p>ALL MY  TRAIN TABLE:</p>  
+        <table class="table of Trainee">
+            <thead>
+              <tr>
+                <th>ID</th>
+                
+                <th>NAMES</th>
+                <th>USERNAME</th>
+                <th>EMAILS</th>
+                <th>DATE OF BIRTH</th>
+                <th>LOCATION</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for st in Tranees %}
+              <tr>
+                <td>{{st.id}}</td>
+                <td>{{ st.names }}</td>
+                <td>{{ st.userName }}</td>
+                <td>{{ st.email }}</td>
+                <td>{{ st.dob }}</td>
+                <td>{{ st.location }}</td>
+                
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+    
+    
+</body>
+</html>

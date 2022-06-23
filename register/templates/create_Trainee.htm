@@ -1,0 +1,60 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+}  
+
+</head>  
+<body>  
+<form method="POST" class="post-form">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Enter Details</h3>  
+    </div>  
+  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Traineer Name: </label>  
+    <div class="col-sm-4">  
+      {{ create.names }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Traineer Email:</label>  
+    <div class="col-sm-4">  
+      {{ create.email }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Traineer UserName:</label>  
+    <div class="col-sm-4">  
+      {{ create.userName }}  
+    </div>  
+      
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Traineer date of birth:</label>  
+    <div class="col-sm-4">  
+       {{ create.dob }}  
+    </div> 
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Traineer Location:</label>  
+        <div class="col-sm-4">  
+        {{ create.location }}  
+        </div> 
+     
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>
